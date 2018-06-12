@@ -1,7 +1,7 @@
 import React from 'react';
 
 import PropTypes from 'prop-types';
-import prettyBytes from 'pretty-bytes';
+import bytes from 'bytes';
 
 import Grid from '@material-ui/core/Grid'
 import Hidden from '@material-ui/core/Hidden';
@@ -71,7 +71,7 @@ class FilesTable extends React.Component {
                 let files = [];
                 querySnapshot.forEach((doc) => {
                     let file = doc.data();
-                    file.sizeHuman = prettyBytes(file.size);
+                    file.sizeHuman = bytes(file.size, {unitSeparator: ' '});
                     file.modifiedHuman = new Date(file.modified).toLocaleString();
                     files.push(Object.assign({id: doc.id}, file));
                 });

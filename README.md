@@ -4,7 +4,7 @@ Files Fire is a proof of concept,
 that uses the new [Material-UI](https://material-ui.com) version and 
 [Firebase](https://firebase.google.com) in React.
 
-![Alt text](.github/Files-Fire.gif?raw=true "Files Fire")
+![Alt text](.github/Files-Fire.png?raw=true "Files Fire")
 
 ## Getting Started
 
